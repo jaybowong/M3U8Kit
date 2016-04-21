@@ -24,11 +24,6 @@
     return self;
 }
 
-- (void)dealloc {
-    [_segmentInfoList release];
-    [super dealloc];
-}
-
 #pragma mark - NSCopyding
 - (id)copyWithZone:(NSZone *)zone {
     M3U8SegmentInfoList *copy = [[[self class] allocWithZone:zone] init];
@@ -48,7 +43,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
-        _segmentInfoList = [[aDecoder decodeObjectForKey:KeySegmentInfList] retain];
+        _segmentInfoList = [aDecoder decodeObjectForKey:KeySegmentInfList];
     }
     
     return self;
@@ -86,8 +81,7 @@
     }
     [m3u8String appendString:@"#EXT-X-ENDLIST\n"];
     
-    NSString *returnString = [[m3u8String copy] autorelease];
-    [m3u8String release];
+    NSString *returnString = [m3u8String copy];
     
     return returnString;
 }

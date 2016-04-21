@@ -73,9 +73,6 @@
         M3U8SegmentInfo *segment = [[M3U8SegmentInfo alloc] initWithDictionary:params];
         [segmentInfoList addSegementInfo:segment];
         
-        [segment release];
-        [params release];
-        
 		segmentRange = [remainingSegments rangeOfString:extinfoString];
     }
     

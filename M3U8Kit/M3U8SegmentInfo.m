@@ -35,11 +35,6 @@ NSString *keyM3U8SegmentMediaURLString = @"key.M3U8SegmentMediaURLString";
     return self;
 }
 
-- (void)dealloc {
-    [_mediaURL release];
-    [super dealloc];
-}
-
 - (NSDictionary *)dictionaryValue {
     NSString *mediaURLString = (_mediaURL == nil || (_mediaURL.absoluteString && !_mediaURL.absoluteString.length)) ?
     (NSString *)[NSNull null] : _mediaURL.absoluteString;

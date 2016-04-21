@@ -242,6 +242,7 @@
 		768566FE16A4397100AB5011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/M3U8Kit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "M3U8Kit/M3U8Kit-Prefix.pch";
@@ -254,6 +255,7 @@
 		768566FF16A4397100AB5011 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/M3U8Kit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "M3U8Kit/M3U8Kit-Prefix.pch";

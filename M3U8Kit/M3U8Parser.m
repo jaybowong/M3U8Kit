@@ -17,7 +17,7 @@
 }
 
 + (M3U8SegmentInfoList *)m3u8SegmentInfoListFromData:(NSData *)m3u8Data {
-    NSString *m3u8String = [[[NSString alloc] initWithData:m3u8Data encoding:NSUTF8StringEncoding] autorelease];
+    NSString *m3u8String = [[NSString alloc] initWithData:m3u8Data encoding:NSUTF8StringEncoding];
     return [self m3u8SegmentInfoListFromPlanString:m3u8String];
 }
 
