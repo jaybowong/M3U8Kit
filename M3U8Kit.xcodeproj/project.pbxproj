@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0986A0EB1CC8ED12006A1DD5 /* M3U8KitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986A0EA1CC8ED12006A1DD5 /* M3U8KitTests.m */; };
+		0986A0ED1CC8ED12006A1DD5 /* libM3U8Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 768566EF16A4397100AB5011 /* libM3U8Kit.a */; };
 		768566F316A4397100AB5011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768566F216A4397100AB5011 /* Foundation.framework */; };
 		7685670B16A4398E00AB5011 /* M3U8Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7685670216A4398E00AB5011 /* M3U8Parser.m */; };
 		7685670C16A4398E00AB5011 /* M3U8SegmentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7685670416A4398E00AB5011 /* M3U8SegmentInfo.m */; };
@@ -14,6 +16,16 @@
 		7685670E16A4398E00AB5011 /* NSString+m3u8.m in Sources */ = {isa = PBXBuildFile; fileRef = 7685670816A4398E00AB5011 /* NSString+m3u8.m */; };
 		7685670F16A4398E00AB5011 /* NSURL+m3u8.m in Sources */ = {isa = PBXBuildFile; fileRef = 7685670A16A4398E00AB5011 /* NSURL+m3u8.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0986A0EE1CC8ED12006A1DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768566E616A4397100AB5011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768566EE16A4397100AB5011;
+			remoteInfo = M3U8Kit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		768566ED16A4397100AB5011 /* CopyFiles */ = {
@@ -28,6 +40,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0986A0E81CC8ED12006A1DD5 /* M3U8KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M3U8KitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0986A0EA1CC8ED12006A1DD5 /* M3U8KitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M3U8KitTests.m; sourceTree = "<group>"; };
+		0986A0EC1CC8ED12006A1DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		768566EF16A4397100AB5011 /* libM3U8Kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM3U8Kit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		768566F216A4397100AB5011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		768566F616A4397100AB5011 /* M3U8Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "M3U8Kit-Prefix.pch"; sourceTree = "<group>"; };
@@ -45,6 +60,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0986A0E51CC8ED12006A1DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0986A0ED1CC8ED12006A1DD5 /* libM3U8Kit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		768566EC16A4397100AB5011 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,10 +79,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0986A0E91CC8ED12006A1DD5 /* M3U8KitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0986A0EA1CC8ED12006A1DD5 /* M3U8KitTests.m */,
+				0986A0EC1CC8ED12006A1DD5 /* Info.plist */,
+			);
+			path = M3U8KitTests;
+			sourceTree = "<group>";
+		};
 		768566E416A4397100AB5011 = {
 			isa = PBXGroup;
 			children = (
 				768566F416A4397100AB5011 /* M3U8Kit */,
+				0986A0E91CC8ED12006A1DD5 /* M3U8KitTests */,
 				768566F116A4397100AB5011 /* Frameworks */,
 				768566F016A4397100AB5011 /* Products */,
 			);
@@ -69,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				768566EF16A4397100AB5011 /* libM3U8Kit.a */,
+				0986A0E81CC8ED12006A1DD5 /* M3U8KitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +169,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0986A0E71CC8ED12006A1DD5 /* M3U8KitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0986A0F01CC8ED12006A1DD5 /* Build configuration list for PBXNativeTarget "M3U8KitTests" */;
+			buildPhases = (
+				0986A0E41CC8ED12006A1DD5 /* Sources */,
+				0986A0E51CC8ED12006A1DD5 /* Frameworks */,
+				0986A0E61CC8ED12006A1DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0986A0EF1CC8ED12006A1DD5 /* PBXTargetDependency */,
+			);
+			name = M3U8KitTests;
+			productName = M3U8KitTests;
+			productReference = 0986A0E81CC8ED12006A1DD5 /* M3U8KitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		768566EE16A4397100AB5011 /* M3U8Kit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 768566FD16A4397100AB5011 /* Build configuration list for PBXNativeTarget "M3U8Kit" */;
@@ -160,6 +212,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = 0day;
+				TargetAttributes = {
+					0986A0E71CC8ED12006A1DD5 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
 			};
 			buildConfigurationList = 768566E916A4397100AB5011 /* Build configuration list for PBXProject "M3U8Kit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -174,11 +231,30 @@
 			projectRoot = "";
 			targets = (
 				768566EE16A4397100AB5011 /* M3U8Kit */,
+				0986A0E71CC8ED12006A1DD5 /* M3U8KitTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0986A0E61CC8ED12006A1DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0986A0E41CC8ED12006A1DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0986A0EB1CC8ED12006A1DD5 /* M3U8KitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		768566EB16A4397100AB5011 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,7 +269,80 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0986A0EF1CC8ED12006A1DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768566EE16A4397100AB5011 /* M3U8Kit */;
+			targetProxy = 0986A0EE1CC8ED12006A1DD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0986A0F11CC8ED12006A1DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = M3U8KitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunti.jaybo.M3U8KitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0986A0F21CC8ED12006A1DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = M3U8KitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunti.jaybo.M3U8KitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		768566FB16A4397100AB5011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -268,6 +417,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0986A0F01CC8ED12006A1DD5 /* Build configuration list for PBXNativeTarget "M3U8KitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0986A0F11CC8ED12006A1DD5 /* Debug */,
+				0986A0F21CC8ED12006A1DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		768566E916A4397100AB5011 /* Build configuration list for PBXProject "M3U8Kit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
