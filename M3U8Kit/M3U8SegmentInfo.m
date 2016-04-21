@@ -18,7 +18,7 @@ NSString *keyM3U8SegmentMediaURLString = @"key.M3U8SegmentMediaURLString";
 
 @implementation M3U8SegmentInfo
 
-- (id)initWithDictionary:(NSDictionary *)params {
+- (instancetype)initWithDictionary:(NSDictionary *)params {
     self = [super init];
     if (self) {
         [params enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop){
@@ -61,7 +61,7 @@ NSString *keyM3U8SegmentMediaURLString = @"key.M3U8SegmentMediaURLString";
     [aCoder encodeObject:_mediaURL forKey:KeyMeidaURL];
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
         _duration = [aDecoder decodeFloatForKey:KeySegmentDuration];
