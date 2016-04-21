@@ -9,9 +9,16 @@
 #import <Foundation/Foundation.h>
 
 @class M3U8SegmentInfoList;
+
+NS_ASSUME_NONNULL_BEGIN
+
+
 @interface M3U8Parser : NSObject
 
-+ (M3U8SegmentInfoList *)m3u8SegmentInfoListFromPlanString:(NSString *)m3u8String;
-+ (M3U8SegmentInfoList *)m3u8SegmentInfoListFromData:(NSData *)m3u8Data;
++ (nullable M3U8SegmentInfoList *)m3u8SegmentInfoListFromPlanString:(NSString *)m3u8String;
++ (nullable M3U8SegmentInfoList *)m3u8SegmentInfoListFromData:(NSData *)m3u8Data;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

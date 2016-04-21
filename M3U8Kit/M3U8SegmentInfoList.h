@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "M3U8SegmentInfo.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
+
 @interface M3U8SegmentInfoList : NSObject
 <
 NSCopying,
@@ -18,8 +21,11 @@ NSCoding
 @property (nonatomic, assign ,readonly) NSUInteger count;
 
 - (void)addSegementInfo:(M3U8SegmentInfo *)segment;
-- (M3U8SegmentInfo *)segmentInfoAtIndex:(NSUInteger)index;
+- (nullable M3U8SegmentInfo *)segmentInfoAtIndex:(NSUInteger)index;
 
 - (NSString *)originalM3U8PlanStringValue;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

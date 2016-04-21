@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+
+NS_ASSUME_NONNULL_BEGIN
+
+
 extern NSString *keyM3U8SegmentDuration;
 extern NSString *keyM3U8SegmentMediaURLString;
 
@@ -24,9 +28,12 @@ NSCoding
 >
 
 @property (nonatomic, readonly) CGFloat duration;
-@property (nonatomic, readonly, copy) NSURL   *mediaURL;
+@property (nullable, nonatomic, readonly, copy) NSURL   *mediaURL;
 
 - (instancetype)initWithDictionary:(NSDictionary *)params;
 - (NSDictionary *)dictionaryValue;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

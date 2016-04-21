@@ -12,7 +12,7 @@
 
 @implementation NSString (m3u8)
 
-- (M3U8SegmentInfoList *)m3u8SegementInfoListValue {
+- (nullable M3U8SegmentInfoList *)m3u8SegementInfoListValue {
     // self == @""
     if (0 == self.length)
         return nil;
