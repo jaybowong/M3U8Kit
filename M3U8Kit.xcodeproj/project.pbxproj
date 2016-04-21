@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0986A0EB1CC8ED12006A1DD5 /* M3U8KitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986A0EA1CC8ED12006A1DD5 /* M3U8KitTests.m */; };
 		0986A0ED1CC8ED12006A1DD5 /* libM3U8Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 768566EF16A4397100AB5011 /* libM3U8Kit.a */; };
+		0986A0F41CC8F7B6006A1DD5 /* sample-file in Resources */ = {isa = PBXBuildFile; fileRef = 0986A0F31CC8F7B6006A1DD5 /* sample-file */; };
 		768566F316A4397100AB5011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768566F216A4397100AB5011 /* Foundation.framework */; };
 		7685670B16A4398E00AB5011 /* M3U8Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7685670216A4398E00AB5011 /* M3U8Parser.m */; };
 		7685670C16A4398E00AB5011 /* M3U8SegmentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7685670416A4398E00AB5011 /* M3U8SegmentInfo.m */; };
@@ -43,6 +44,7 @@
 		0986A0E81CC8ED12006A1DD5 /* M3U8KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M3U8KitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0986A0EA1CC8ED12006A1DD5 /* M3U8KitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M3U8KitTests.m; sourceTree = "<group>"; };
 		0986A0EC1CC8ED12006A1DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0986A0F31CC8F7B6006A1DD5 /* sample-file */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sample-file"; sourceTree = "<group>"; };
 		768566EF16A4397100AB5011 /* libM3U8Kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM3U8Kit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		768566F216A4397100AB5011 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		768566F616A4397100AB5011 /* M3U8Kit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "M3U8Kit-Prefix.pch"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		0986A0E91CC8ED12006A1DD5 /* M3U8KitTests */ = {
 			isa = PBXGroup;
 			children = (
+				0986A0F31CC8F7B6006A1DD5 /* sample-file */,
 				0986A0EA1CC8ED12006A1DD5 /* M3U8KitTests.m */,
 				0986A0EC1CC8ED12006A1DD5 /* Info.plist */,
 			);
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0986A0F41CC8F7B6006A1DD5 /* sample-file in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
