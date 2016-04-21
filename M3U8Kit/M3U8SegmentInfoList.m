@@ -60,6 +60,10 @@
 }
 
 - (M3U8SegmentInfo *)segmentInfoAtIndex:(NSUInteger)index {
+    BOOL isValidIndex = index < _segmentInfoList.count;
+    if (!isValidIndex) {
+        return nil;
+    }
     return [_segmentInfoList objectAtIndex:index];
 }
 
