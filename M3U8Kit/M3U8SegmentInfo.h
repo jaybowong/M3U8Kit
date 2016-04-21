@@ -26,7 +26,7 @@ NSCoding
 @property (nonatomic, readonly) CGFloat duration;
 @property (nonatomic, readonly, copy) NSURL   *mediaURL;
 
-- (id)initWithDictionary:(NSDictionary *)params;
+- (instancetype)initWithDictionary:(NSDictionary *)params;
 - (NSDictionary *)dictionaryValue;
 
 @end
